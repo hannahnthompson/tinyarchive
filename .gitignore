@@ -1,6 +1,7 @@
 tinyarchive/tinyenv/*
 tinylibs/*
 denv/*
+myvenv/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
