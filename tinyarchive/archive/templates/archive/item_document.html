@@ -18,8 +18,9 @@
                 </div>
                 {% endif %}
             </div>
-            <li><b class="w3-xlarge"> Title:</b> {{item.title}}</li>
-            <li><b class="w3-xlarge"> PDF:</b> <i><p class = 'b'>{{item.PDF}}</p></i> </li>
+            <li><b class="w3-xlarge"> Title:</b> <p> {{item.title}}</p></li>
+            <li><b class="w3-xlarge"> PDF:</b> <i><p class = 'b'>
+                <a href={% get_media_prefix %}{{item.PDF}}>{{item.PDF}}</a></p></i> </li>
             <li><b class="w3-xlarge"> Description:</b><i><p class = 'b'>{{item.description}}</p></i> </li>
             <li><b class="w3-xlarge"> Language:</b><i><p class = 'b'>{{item.language}}</p></i></li>
             <li><b class="w3-xlarge"> Contributor Names:</b><i>  <p class = 'b'>{{item.contributor_names}}</p></i> </li>
