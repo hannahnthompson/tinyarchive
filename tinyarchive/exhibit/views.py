@@ -46,6 +46,7 @@ def exhibit_detail(request, exhibit_id):
             "name":item.name,
             "description": item.description,
             "image": img,
+            "pdf": item.PDF
         }
         context["exhibit_items"].append(exhibit_item)
     return render(request,"exhibit/detail.html", context)
